@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomePageComponent } from './home-page.component';
 import { FirstPartComponent } from './components/first-part/first-part.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FirstPartComponent } from './components/first-part/first-part.component
   ],
   imports: [
     CommonModule,
+    SharedModule,
     HomePageRoutingModule
   ]
 })

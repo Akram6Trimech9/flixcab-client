@@ -3,14 +3,18 @@ import { CommonModule } from '@angular/common';
 import { VisiteurComponent } from './visiteur/visiteur.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [VisiteurComponent],
+  declarations: [
+    VisiteurComponent
+  ],
   imports: [
-    CommonModule , 
+    ReactiveFormsModule,
+    CommonModule,
+    SharedModule,
     FormsModule,
     RouterModule
   ]
 })
-export class LModule { }
+export class LayoutModule { }
